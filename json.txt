@@ -1,0 +1,29 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbound": {
+    "protocol": "vmess",
+    "port": 8080,
+    "settings": {
+      "clients": [
+        {
+          "id": "c8e1781d-6320-9d53-ce5d-8cda58b30819",
+          "alterId": 64,
+	  "security": "chacha20-ploy1350"
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "wsSettings": {
+      "path": "/websites"
+      }
+    }
+  },
+  "inboundDetour": [],
+  "outbound": {
+    "protocol": "freedom",
+    "settings": {}
+  }
+}
